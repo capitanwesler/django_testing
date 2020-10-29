@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Notting - Create your notes </title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Base index for the To Do List" />
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'index/index.css' %}" />
+        <script src="{% static 'index/index.js'%}"></script>
+    </head>
+    <body>
+        <main>
+            <header id="title-container">
+                <h1>Welcome to the Notes Application !</h1>
+                <p>
+                    This is a notes application made with Django and JavaScript.
+                </p>
+            </header>
+            <div id="notes-container" class="non-displayed">
+                <ul id="notes"></ul> 
+            </div>
+            <div id="create-note" class="displayed">
+                <textarea rows="4" cols="30" placeholder="Create your note !"></textarea>
+            </div>
+            <div id="buttons-container">
+                <button id="show-notes" class="btn-default" type="button">Show Notes</button>
+                <button id="new-note" class="btn-default" type="button">Create Note</button>
+                <button id="save-note" class="btn-default" type="button">Save Note</button>
+            </div>
+        </main>
+    </body>
+</html>

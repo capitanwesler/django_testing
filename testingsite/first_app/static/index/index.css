@@ -1,0 +1,76 @@
+/* This is the CSS for the index template */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: lightgray;
+}
+
+main {
+    margin: 100px auto;
+    width: 600px;
+}
+
+
+#title-container {
+    display: flex;
+    flex-direction: column;
+    background-color: gold;
+    box-shadow: 10px 10px black;
+    padding: 10px;
+    border-radius: 15px;
+    align-items: center;
+    margin: 10px auto;
+}
+
+#title-container h1 {
+    text-shadow: 3px 3px white;
+}
+
+#notes-container {
+    padding: 10px 70px;
+}
+
+#create-note {
+    text-align: center;
+    margin: 30px 0;
+}
+
+#create-note textarea {
+    border: none;
+    border-radius: 15px;
+    font-size: 15px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 5px 5px black;
+    max-width: 500px;
+    max-height: 300px;
+    min-width: 200px;
+    min-height: 100px;
+}
+
+#buttons-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.btn-default {
+    padding: 10px;
+    font-family: inherit;
+    box-shadow: 5px 5px black;
+    background-color: gold;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+}
+
+.non-displayed {
+    display: none;
+}
+
+.displayed {
+    display: block;
+}
